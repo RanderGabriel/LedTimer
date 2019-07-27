@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/led_a"
+        android:layout_width="@dimen/led_heigth"
+        android:layout_height="@dimen/led_width"
+        android:src="@drawable/display_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/led_f"
+        android:layout_width="@dimen/led_width"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/display_vertical_image"
+        app:layout_constraintEnd_toEndOf="@+id/led_a"
+        app:layout_constraintTop_toTopOf="@+id/led_a" />
+
+    <ImageView
+        android:id="@+id/led_b"
+        android:layout_width="@dimen/led_width"
+        android:layout_height="@dimen/led_heigth"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/display_vertical_image"
+        app:layout_constraintStart_toEndOf="@+id/led_f"
+        app:layout_constraintTop_toTopOf="@+id/led_a" />
+
+    <ImageView
+        android:id="@+id/led_g"
+        android:layout_width="@dimen/led_heigth"
+        android:layout_height="@dimen/led_width"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/display_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/led_a" />
+
+    <ImageView
+        android:id="@+id/led_e"
+        android:layout_width="@dimen/led_width"
+        android:layout_height="@dimen/led_heigth"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/display_vertical_image"
+        app:layout_constraintEnd_toEndOf="@+id/led_g"
+        app:layout_constraintTop_toTopOf="@+id/led_g" />
+
+    <ImageView
+        android:id="@+id/led_c"
+        android:layout_width="@dimen/led_width"
+        android:layout_height="@dimen/led_heigth"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/display_vertical_image"
+        app:layout_constraintStart_toStartOf="@+id/led_g"
+        app:layout_constraintTop_toTopOf="@+id/led_g" />
+
+    <ImageView
+        android:id="@+id/led_d"
+        android:layout_width="@dimen/led_heigth"
+        android:layout_height="@dimen/led_width"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/display_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/led_g" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
